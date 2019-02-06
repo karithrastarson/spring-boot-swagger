@@ -1,0 +1,31 @@
+openapi: 3.0.0
+info:
+  title: Northstar Controller
+  description: Endpoints to configuration database
+  version: 0.0.1
+
+servers:
+  - url: http://localhost
+    description: development
+
+paths:
+  /test:
+    get:
+      summary: Returns a test output
+      description: Description of the test output
+        This can even be in html?
+        <h1>point</h1>
+        <ul>
+          <li>That's</li>
+          <li>my</li>
+          <li>point!</li>
+        </ul>
+      responses:
+        '200':  #SUCCESS
+          description: A json text output, success
+          content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    type: string
