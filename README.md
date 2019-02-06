@@ -1,6 +1,3 @@
-#North Star Control Layer
-
-
 ## OPENAPI 3.0
 
 ### Generating the APIs
